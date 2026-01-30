@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOGITH BHARADWAJ's Spam Detection Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>YOGITH BHARADWAJ's Spam Detection Website</h2>
+
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter your message" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    <div class="result">
+        {{ prediction }}
+    </div>
+</div>
+
+</body>
+</html>
+
+
